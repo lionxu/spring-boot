@@ -26,8 +26,15 @@ versions["springFramework"] = "6.0.12"
 ext.set("versions", versions)
 if (versions.springFramework.contains("-")) {
 	repositories {
-		maven { url "https://repo.spring.io/milestone" }
-		maven { url "https://repo.spring.io/snapshot" }
+		def A_LI_YUN_REPOSITORY_URL = 'https://maven.aliyun.com/repository/public/'
+		def A_LI_YUN_JCENTER_URL = 'https://maven.aliyun.com/repository/jcenter/'
+		def A_LI_YUN_GOOGLE_URL = 'https://maven.aliyun.com/repository/google/'
+		def A_LI_YUN_GRADLE_PLUGIN_URL = 'https://maven.aliyun.com/repository/gradle-plugin/'
+
+		maven { url A_LI_YUN_REPOSITORY_URL }
+		maven { url A_LI_YUN_JCENTER_URL }
+		maven { url A_LI_YUN_GOOGLE_URL }
+		maven { url A_LI_YUN_GRADLE_PLUGIN_URL }
 	}
 }
 
