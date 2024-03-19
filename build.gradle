@@ -41,12 +41,12 @@ allprojects {
 		maven { url A_LI_YUN_GOOGLE_URL }
 		maven { url A_LI_YUN_GRADLE_PLUGIN_URL }
 
-		if (version.contains('-')) {
-			maven { url "https://repo.spring.io/milestone" }
-		}
-		if (version.endsWith('-SNAPSHOT')) {
-			maven { url "https://repo.spring.io/snapshot" }
-		}
+//		if (version.contains('-')) {
+//			maven { url "https://repo.spring.io/milestone" }
+//		}
+//		if (version.endsWith('-SNAPSHOT')) {
+//			maven { url "https://repo.spring.io/snapshot" }
+//		}
 
 	}
 
